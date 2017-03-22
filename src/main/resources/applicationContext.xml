@@ -18,4 +18,7 @@
     <bean id="testBean2" class="org.rembau.test.TestBean2">
         <constructor-arg ref="testBean"/>
     </bean>
+
+    <!-- 扫描改包下面的 有相应注解的bean -->
+    <context:component-scan base-package="org.rembau"/>
 </beans>
