@@ -15,4 +15,7 @@
 
     <bean id="testBean" class="org.rembau.test.TestBean"/>
 
+    <bean id="testBean2" class="org.rembau.test.TestBean2">
+        <constructor-arg ref="testBean"/>
+    </bean>
 </beans>
