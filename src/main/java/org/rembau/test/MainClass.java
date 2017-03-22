@@ -9,6 +9,7 @@ public class MainClass {
     public static void main(String args[]) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[]{"classpath:applicationContext.xml"});
+
         TestBean testBean = context.getBean(TestBean.class);
         testBean.handle();
     }
